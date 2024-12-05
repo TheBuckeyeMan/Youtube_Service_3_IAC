@@ -14,10 +14,6 @@ variable "region" {
     default = "us-east-2"
 }
 
-variable "AWS_REGION" {
-  description = "AWS_REGION"
-  type = string
-}
 variable "LOGGING_BUCKET_NAME" {
   description = "LOGGING_BUCKET_NAME"
   type = string

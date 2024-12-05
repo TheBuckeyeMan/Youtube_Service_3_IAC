@@ -21,7 +21,6 @@ resource "aws_lambda_function" "api_lambda" {
       GPT_BUCKET_KEY = var.GPT_BUCKET_KEY
       LANDING_BUCKET = var.LANDING_BUCKET
       AUDIO_BUCKET_KEY = var.AUDIO_BUCKET_KEY
-      AWS_REGION = var.AWS_REGION
       API_URL = var.API_URL
       API_NAME = var.API_NAME
     }
