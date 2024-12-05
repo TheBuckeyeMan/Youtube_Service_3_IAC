@@ -38,3 +38,8 @@ variable "AUDIO_BUCKET_KEY" {
   description = "AUDIO_BUCKET_KEY"
   type = string
 }
+
+variable "API_URL" {
+  description = "API_URL"
+  type = string
+}
