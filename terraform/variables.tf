@@ -43,3 +43,7 @@ variable "API_URL" {
   description = "API_URL"
   type = string
 }
+variable "API_NAME" {
+  description = "API_NAME"
+  type = string
+}

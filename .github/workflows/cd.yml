@@ -35,6 +35,6 @@ jobs:
         working-directory: terraform
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve -var="aws_access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" -var="aws_secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}" -var="LOGGING_BUCKET_NAME=${{ secrets.LOGGING_BUCKET_NAME }}" -var="LOGGING_BUCKET_KEY=${{ secrets.LOGGING_BUCKET_KEY }}" -var="GPT_BUCKET_KEY=${{ secrets.GPT_BUCKET_KEY }}" -var="LANDING_BUCKET=${{ secrets.LANDING_BUCKET }}" -var="AUDIO_BUCKET_KEY=${{ secrets.AUDIO_BUCKET_KEY }}" -var="AWS_REGION=${{ secrets.AWS_REGION }}" -var="API_URL=${{ secrets.API_URL }}"
+        run: terraform apply -auto-approve -var="aws_access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" -var="aws_secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}" -var="LOGGING_BUCKET_NAME=${{ secrets.LOGGING_BUCKET_NAME }}" -var="LOGGING_BUCKET_KEY=${{ secrets.LOGGING_BUCKET_KEY }}" -var="GPT_BUCKET_KEY=${{ secrets.GPT_BUCKET_KEY }}" -var="LANDING_BUCKET=${{ secrets.LANDING_BUCKET }}" -var="AUDIO_BUCKET_KEY=${{ secrets.AUDIO_BUCKET_KEY }}" -var="AWS_REGION=${{ secrets.AWS_REGION }}" -var="API_URL=${{ secrets.API_URL }}" -var="API_NAME=${{ secrets.API_NAME }}"
         working-directory: terraform
 
