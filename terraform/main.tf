@@ -16,11 +16,16 @@ resource "aws_lambda_function" "api_lambda" {
 
   environment {
     variables = {
-
+      LOGGING_BUCKET_NAME = var.LOGGING_BUCKET_NAME
+      LOGGING_BUCKET_KEY = var.LOGGING_BUCKET_KEY
+      GPT_BUCKET_KEY = var.GPT_BUCKET_KEY
+      LANDING_BUCKET = var.LANDING_BUCKET
+      AUDIO_BUCKET_KEY = var.AUDIO_BUCKET_KEY
+      AWS_REGION = var.AWS_REGION
     }
   }
 
-  timeout = 60 #Adjust the timeout of the function IN SECONDS
+  timeout = 40 #Adjust the timeout of the function IN SECONDS
   memory_size = 512 #Adjust the Memory of the function
 
 }
