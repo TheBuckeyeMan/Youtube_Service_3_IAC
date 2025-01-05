@@ -43,3 +43,8 @@ variable "API_NAME" {
   description = "API_NAME"
   type = string
 }
+variable "SPEECH_BUCKET_KEY" {
+  description = "SPEECH_BUCKET_KEY"
+  type = string
+}
+
