@@ -23,6 +23,7 @@ resource "aws_lambda_function" "api_lambda" {
       AUDIO_BUCKET_KEY = var.AUDIO_BUCKET_KEY
       API_URL = var.API_URL
       API_NAME = var.API_NAME
+      SPEECH_BUCKET_KEY = var.SPEECH_BUCKET_KEY
     }
   }
 
